@@ -1,0 +1,14 @@
+
+    FINAL TEST METRICS:
+    ===================
+    Binary Task (Cattle vs Non-Cattle):
+    - Accuracy: 0.7513
+    - F1 Score: 0.4792
+    - Precision: 0.3305
+    - Recall: 0.8707
+    
+    Disease Task (Healthy vs FMD):
+    - F1 Score: 0.9434
+    - Precision: 0.9615
+    - Recall (FMD Detection R): 0.9259
+    
