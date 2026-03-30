@@ -19,7 +19,7 @@ The core of this project is a continuous pipeline, beginning from raw folder ing
 graph TD
     A[Raw Datasets] --> B[Phase 1: Quality Control & Data Cleanup]
     subgraph Data Processing Pipeline
-        B --> |pHash deduplication & Blur check| C(Phase 2: Preprocessing Augmentation)
+        B --> |pHash deduplication & Blur check| C(Phase 2: Preprocessing & Augmentation)
         C --> |Weighted Dataloading| D[Train, Val, Test Splits]
     end
 
