@@ -20,7 +20,7 @@ graph TD
     A[Raw Datasets] --> B[Phase 1: Quality Control & Data Cleanup]
     subgraph Data Processing Pipeline
         B --> |pHash deduplication & Blur check| C(Phase 2: Preprocessing & Augmentation)
-        C --> |Weighted Dataloading| D[Train, Val, Test Splits]
+        C --> D[Train, Val, Test Splits]
     end
 
     D --> E(MobileNetV3 Backbone \n Pretrained on ImageNet)
