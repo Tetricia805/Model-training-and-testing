@@ -34,7 +34,7 @@ graph TD
         H --> J[Disease Head \n Healthy vs FMD]
     end
     
-    I --> |Prob < 0.54| K[OOD Reject / Non-Cattle]
+    I --> |Prob < 0.54| K[Non-Cattle]
     I --> |Prob >= 0.54| L{Disease Diagnostic}
     
     J --> L
