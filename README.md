@@ -206,3 +206,49 @@ To spin up the interactive tester:
 python fmd_ui.py
 # The server will launch at http://127.0.0.1:7860
 ```
+
+flowchart LR
+
+%% Inputs
+A[Livestock Images]
+B[Farmer Observations / Symptoms]
+C[User Requests]
+
+%% Process - AniLink System
+subgraph D[AniLink System]
+    D1[AI Detection Module\n(Cattle Verification + FMD Detection)]
+    D2[Digital Health Records\n(Storage & Longitudinal Tracking)]
+    D3[Veterinary & Marketplace Integration]
+end
+
+%% Outputs
+E[Disease Prediction\n(Confidence Scores)]
+F[Structured Health Records]
+G[Veterinary Recommendations]
+H[Access to Verified Inputs & Services]
+
+%% Outcomes
+I[Improved Livestock Health]
+J[Better Decision-Making]
+K[Reduced Livestock Losses]
+
+%% Flow Connections
+A --> D1
+B --> D1
+C --> D3
+
+D1 --> D2
+D2 --> D3
+
+D3 --> E
+D2 --> F
+D3 --> G
+D3 --> H
+
+E --> I
+F --> J
+G --> J
+H --> I
+
+I --> K
+J --> K
